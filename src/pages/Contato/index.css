@@ -1,39 +1,87 @@
-.subcontato{
+
+.corpo {
+    background-color: #4b4b1f;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.corpo-flex-center { 
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    color: #ffff00;
-    padding-top: 120px;
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: center; 
+    text-align: center;    
 }
 
-h3{
-    color: #ffff00;
-    font-size: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+
+.subcontato {
+    font-size: 50px;     
+    color: #ffff00;  
+    margin-bottom: 40px; 
+    line-height: 1.2;
 }
 
-h4{
-    color: white;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contato-imagem,
+.corpo-flex-center img {
+    display: block;
+    width: 230px;        
+    max-width: 70%;    
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px; 
+}
+.contato-nome,
+.corpo-flex-center h3 {
+    color: #ffff00;     
+    font-size: 35px;    
+    margin: 0 0 8px 0;   
 }
 
-.botaocontato{
+.contato-cargo,
+.corpo-flex-center h4 {
+    color: white;       
+    font-size: 20px;    
+    margin: 0 0 35px 0; 
+    font-weight: normal; 
+}
+
+.botaocontato {
     background-color: rgb(153, 5, 5);
-    color: #ffff00;
-    margin-top: 10px;
-    margin-left: 650px;
+    color: #ffff00;  
+    padding: 15px 35px;  
+    border-radius: 8px;
+    font-size: 22px;     
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-img{
-    padding-top: 20px;
-    margin-left: 650px;
-    width: 250px;
-    border-radius: 120px;
+.botaocontato:hover {
+    background-color: rgb(123, 4, 4);
+    transform: translateY(-2px);
 }
+
+
+@media (max-width: 768px) {
+  
+    .subcontato {
+        font-size: 35px;    /* Reduz fonte */
+        margin-bottom: 30px;
+    }
+    .contato-imagem, .corpo-flex-center img {
+        width: 160px;       /* Imagem menor */
+        margin-bottom: 15px;
+    }
+    .contato-nome, .corpo-flex-center h3 {
+        font-size: 26px;    /* Reduz fonte */
+    }
+    .contato-cargo, .corpo-flex-center h4 {
+        font-size: 17px;    /* Reduz fonte */
+        margin-bottom: 30px;
+    }
+}
+

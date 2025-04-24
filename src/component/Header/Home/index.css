@@ -1,49 +1,103 @@
-.corpo{
+
+.corpo {
     background-color: #4b4b1f;
-    height: 675px;
+    min-height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
 }
 
-h1{
+h1 {
     color: #ffff00;
     font-size: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 200px;
+    margin: 0 0 25px 0;
+    line-height: 1.2;
 }
 
-.sub_titulo{
+.sub_titulo {
     color: white;
     font-size: 25px;
-    display: flex;
-    justify-content: center;
-    padding-top: 25px;
-
+    margin: 0 0 40px 0;
+    max-width: 800px;
+    line-height: 1.5;
 }
 
-button{
-    padding: 20px;
+button {
+    padding: 20px 30px;
     border-radius: 10px;
     font-size: 25px;
+    border: none;
+    cursor: pointer;
 }
 
-.botaohome{
+.botaohome {
     background-color: #ffff00;
-    position: relative;
-    display:flex;
-    justify-content: center;
-    top: 100px;
-    left: 600px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+.botaohome:hover {
+    background-color: #e6e600;
+}
+.botaohome a {
     text-decoration: none;
-    color: white;
+    color: #333;
+    font-weight: bold;
+    display: block;
 }
 
-.linkhome{
+.linkhome {
     text-decoration: none;
     color: white;
     font-size: 25px;
-    position: relative;
-    left: 1200px;
-    top: 160px;
+    margin-top: 20px;
+    transition: color 0.3s ease;
 }
+.linkhome:hover {
+    color: #ffff00;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .corpo {
+        padding: 30px 15px; 
+        justify-content: center; 
+    }
+
+    h1 {
+        font-size: 38px; 
+        margin-bottom: 20px; 
+        line-height: 1.3; 
+    }
+
+    .sub_titulo {
+        font-size: 18px; 
+        max-width: 95%; 
+        margin-bottom: 35px; 
+    }
+
+
+    button,
+    .botaohome a,
+    .linkhome {
+        font-size: 18px;
+    }
+
+     .botaohome {
+         padding: 15px 25px;
+         width: 80%; 
+         max-width: 320px;
+         margin-bottom: 25px;
+    }
+
+    .linkhome {
+         font-size: 16px;
+         margin-top: 15px; 
+    }
+}
+
