@@ -1,0 +1,23 @@
+.sub_titulo_servico{
+    font-size: 45px;
+    color: #ffff00;
+    top: 120px;
+    position:sticky;
+    top: 100px;
+    padding-left: 150px;
+}
+
+.lista{
+    list-style-type: disc;
+    padding-left: 150px;
+    font-size: 40px;
+    color: #ffff00;
+    & li{
+        padding-top: 90px;
+    }
+
+}
+
+.listaleft{
+    margin: 35px;
+}

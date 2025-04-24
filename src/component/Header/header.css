@@ -1,0 +1,30 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(17, 17, 16);
+}
+.cabecalho{
+    display: flex;
+    padding: 15px;
+}
+
+ .logo{
+    color: #ffff00;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 7px;
+    
+
+    & span{
+        color: red;
+    }
+ }
+
+ .link{
+    text-decoration: none;
+    color: white;
+    padding-left: 25px;
+    font-family: 206px;
+
+ }

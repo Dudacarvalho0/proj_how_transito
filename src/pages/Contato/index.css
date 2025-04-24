@@ -1,0 +1,39 @@
+.subcontato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #ffff00;
+    padding-top: 120px;
+}
+
+h3{
+    color: #ffff00;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h4{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaocontato{
+    background-color: rgb(153, 5, 5);
+    color: #ffff00;
+    margin-top: 10px;
+    margin-left: 650px;
+}
+
+img{
+    padding-top: 20px;
+    margin-left: 650px;
+    width: 250px;
+    border-radius: 120px;
+}
